@@ -13,7 +13,6 @@ const Main = () => {
     })
       .then(async response => {
         const data = await response.json();
-        console.log('data : ', data)
         // check for error response
         if (!response.ok) {
           // get error message from body or default to response statusText
